@@ -7,7 +7,7 @@ logging.basicConfig(level=logging.ERROR, format='%(asctime)s %(levelname)s: %(me
 
 bp = Blueprint('posts', __name__, url_prefix='/posts')
 
-@bp.route('/', methods=['POST'])
+@bp.route('/create', methods=['POST'])
 def crear_post():
     try:
         # Obtenemos los datos del post desde la solicitud
