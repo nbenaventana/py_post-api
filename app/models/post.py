@@ -1,18 +1,23 @@
+from app.utils.db import db
 from datetime import datetime
 
-from app.utils.db import mongo
+class Post(db.Model):
+    __tablename__ = 'posts'
 
-class Post:
+    id = db.Column(db.Integer, primary_key=True)
+    autor = db.Column(db.String(100), nullable=False)
+    contenido = db.Column(db.Text, nullable=False)
+    fecha_creacion = db.Column(db.DateTime, default=datetime.utcnow)
+
     def __init__(self, autor, contenido):
         self.autor = autor
         self.contenido = contenido
-        self.fecha_creacion = datetime.utcnow()
 
     def save(self):
-        post_dict = {
-            'autor': self.autor,
-            'contenido': self.contenido,
-            'fecha_creacion': self.fecha_creacion
-        }
-        result = mongo.db.posts.insert_one(post_dict)
-        return result.inserted_id
+        db.session.add(self)
+        db.session.commit()
+        return self.id
+
+    @staticmethod
+    def get_all():
+        return Post.query.all()
