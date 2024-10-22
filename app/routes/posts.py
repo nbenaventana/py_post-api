@@ -10,23 +10,23 @@ bp = Blueprint('posts', __name__, url_prefix='/posts')
 @bp.route('/create', methods=['POST'])
 def crear_post():
     try:
-        # Obtenemos los datos del post desde la solicitud
+        # Get post data from the request
         autor = request.json['autor']
         contenido = request.json['contenido']
 
-        # Creamos un nuevo objeto Post
+        # Create a new Post object
         post = Post(autor, contenido)
 
-        # Guardamos el post en la base de datos
+        # Save the post to the database
         post_id = post.save()
 
-        # Retornamos una respuesta exitosa
+        # Return a successful response
         return jsonify({'mensaje': 'Post creado exitosamente', 'post_id': str(post_id)}), 201
     except KeyError as e:
-        # Manejamos el error si falta algún campo en la solicitud
+        # Handle error if any field is missing in the request
         return jsonify({'error': f'Falta el campo {e}'}), 400
     except Exception as e:
-        # Manejamos cualquier otro error
+        # Handle any other error
         logging.error('Error al crear post.', exc_info=True)
         return jsonify({'error': 'Error al crear el post'}), 500
 
