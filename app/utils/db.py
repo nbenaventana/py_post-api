@@ -1,6 +1,6 @@
-from flask_pymongo import PyMongo
+from flask_mysqldb import MySQL
 
-mongo = PyMongo()
+db = MySQL()
 
 def init_app(app):
-    mongo.init_app(app)
+    db.init_app(app)

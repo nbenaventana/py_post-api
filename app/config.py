@@ -1,7 +1,10 @@
 class Config:
-    # Configuración de MongoDB
-    MONGO_URI = 'mongodb://mongo:FBUgdGWPvFqzuQABMwShZTcTwZNrUPQC@autorack.proxy.rlwy.net:31753'
-    MONGO_DBNAME = 'test'
+    # Configuración de Mysql
+    MYSQL_HOST = 'localhost'
+    MYSQL_USER = 'root'
+    MYSQL_PASSWORD = ''
+    MYSQL_DB = 'posts'
+    MYSQL_CURSORCLASS = 'DictCursor'
 
 
     # Additional configuration
