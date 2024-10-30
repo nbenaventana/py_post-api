@@ -5,12 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c9118a05-4761-4d2e-a40d-1a3cdb904827" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/pyPostApi.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/pyPostApi.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/config.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/routes/posts.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/routes/posts.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/utils/db.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/utils/db.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -132,7 +128,7 @@
       <workItem from="1729030799836" duration="6925000" />
       <workItem from="1729640766125" duration="2649000" />
       <workItem from="1730245852994" duration="3527000" />
-      <workItem from="1730326889197" duration="1997000" />
+      <workItem from="1730326889197" duration="3025000" />
     </task>
     <servers />
   </component>
@@ -141,6 +137,6 @@
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/pyPostApi$Flask__app_py_.coverage" NAME="Flask (app.py) Coverage Results" MODIFIED="1730249401709" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
-    <SUITE FILE_PATH="coverage/pyPostApi$pyPostApi.coverage" NAME="pyPostApi Coverage Results" MODIFIED="1730249439664" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/pyPostApi$pyPostApi.coverage" NAME="pyPostApi Coverage Results" MODIFIED="1730330005958" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
   </component>
 </project>
