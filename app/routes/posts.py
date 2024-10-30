@@ -33,15 +33,15 @@ def crear_post():
 @bp.route('/list', methods=['GET'])
 def listar_posts():
     try:
-        # Obtenemos todos los posts de la base de datos
+        # Get all posts from the database
         posts = Post.get_all()
 
-        # Convertimos los posts a un formato JSON
-        posts_json = [{'autor': post['autor'], 'contenido': post['contenido'], 'fecha_creacion': post['fecha_creacion']} for post in posts]
+        # Convert posts to JSON format
+        posts_json = [{'autor': post.autor, 'contenido': post.contenido, 'fecha_creacion': post.fecha_creacion} for post in posts]
 
-        # Retornamos la lista de posts
+        # Return the list of posts
         return jsonify(posts_json), 200
     except Exception as e:
-        # Manejamos cualquier error
+        # Handle any error
         logging.error('Error al listar posts.', exc_info=True)
         return jsonify({'error': 'Error al listar posts'}), 500

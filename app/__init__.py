@@ -1,15 +1,15 @@
 from flask import Flask
-from app.routes import posts  # Importamos el blueprint de posts
-from app.utils.db import db  # Importamos la conexión a MySQL
+from app.routes import posts
+from app.utils.db import db
 
 def create_app():
     app = Flask(__name__)
-    app.config.from_object('app.config.Config')  # Cargamos la configuración
+    app.config.from_object('app.config.Config')
 
-    # Inicializamos la conexión a MongoDB
+    # Initialize SQLAlchemy
     db.init_app(app)
 
-    # Registramos el blueprint de posts
+    # Register blueprints
     app.register_blueprint(posts.bp)
 
     return app
