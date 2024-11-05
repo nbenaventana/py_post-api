@@ -1,8 +1,8 @@
 class Config:
-    POSTGRES_DB = 'postgres'
-    POSTGRES_USER = 'dbos_user'
-    POSTGRES_PASSWORD = 'xx98am91A$'
-    POSTGRES_HOST = 'userdb-b12686a1-2075-4227-9979-85fe27365f9f.cvc4gmaa6qm9.us-east-1.rds.amazonaws.com'
+    POSTGRES_DB = 'post_7kgu'
+    POSTGRES_USER = 'root'
+    POSTGRES_PASSWORD = 'zAkOJ4xxkqOP4NYuqAdHSAHIWJj2ULcC'
+    POSTGRES_HOST = 'dpg-cs7g54ij1k6c73fg5p20-a.oregon-postgres.render.com'
     POSTGRES_PORT = 5432
 
     DEBUG = True

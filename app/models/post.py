@@ -24,8 +24,10 @@ class Post:
     def get_all():
         db = get_db()
         cursor = db.cursor()
-        cursor.execute("SELECT * FROM pg_catalog.pg_aggregate")
+        cursor.execute("SELECT * FROM posts")
         posts = cursor.fetchall()
+        print(posts)
         cursor.close()
-        return [{'autor': row[0], 'contenido': row[1], 'fecha_creacion': row[2]} for row in posts]
+        return posts
+        #return [{'autor': row[1], 'contenido': row[2], 'fecha_creacion': row[3]} for row in posts]
 
