@@ -96,8 +96,8 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Flask server.Flask (app.py)" />
       <item itemvalue="Flask server.pyPostApi" />
+      <item itemvalue="Flask server.Flask (app.py)" />
     </list>
     <recent_temporary>
       <list>
