@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c9118a05-4761-4d2e-a40d-1a3cdb904827" name="Changes" comment="merge">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
-    </list>
+    <list default="true" id="c9118a05-4761-4d2e-a40d-1a3cdb904827" name="Changes" comment="merge" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -129,7 +126,7 @@
       <workItem from="1729640766125" duration="2649000" />
       <workItem from="1730245852994" duration="3527000" />
       <workItem from="1730326889197" duration="4128000" />
-      <workItem from="1730850210602" duration="5170000" />
+      <workItem from="1730850210602" duration="5535000" />
     </task>
     <task id="LOCAL-00001" summary="merge">
       <option name="closed" value="true" />

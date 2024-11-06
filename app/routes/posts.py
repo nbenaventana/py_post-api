@@ -37,7 +37,7 @@ def listar_posts():
         posts = Post.get_all()
 
         # Convert posts to JSON format
-        posts_json = [{'autor': post.autor, 'contenido': post.contenido, 'fecha_creacion': post.fecha_creacion} for post in posts]
+        posts_json = [{'autor': post[1], 'contenido': post[2], 'fecha_creacion': post[3]} for post in posts]
 
         # Return the list of posts
         return jsonify(posts_json), 200
